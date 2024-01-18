@@ -2,3 +2,19 @@ $primary-color: #151515;
 $highlight-color: #4ee1a0;
 $base-spacing: 16px;
 $light-color-2: #ffffff;
+$font-family: 'Space Grotesk';
+
+$font-style-heading-m: (
+  font-size: 24px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 32px, 
+);
+
+@mixin apply-font-styles {
+    @each $property, $value in $font-style-heading-m {
+      #{$property}: $value;
+    }
+  }
+
+
