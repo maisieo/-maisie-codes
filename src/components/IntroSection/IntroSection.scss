@@ -23,31 +23,15 @@
 .sub-heading {
   @include apply-font-body;
   max-width: 445px;
-
   padding-bottom:66px;
 }
 
-// header {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   padding-top: 39px;
-// }
+.contact-button {
+  @include apply-font-body;
+}
 
-// .name {
-//   color: $light-color-2;
-// //   font-family: $font-family;
-//   @include apply-font-styles;
-// }
+.contact-button:hover {
+  color:green;
+  transition: all 0.3s;
+}
 
-// /*social icons*/
-
-// .social-icons {
-//   display: flex;
-//   min-width: 43px;
-//   gap: 20px;
-// }
-
-// .social-icons i {
-//   color: $light-color-2;
-// }
