@@ -7,7 +7,11 @@
 // */
 
 .intro-section {
+  display: flex;
+  flex-direction: row;
   padding-top:88px;
+  padding-left: $horizontal-spacing;
+  padding-right: $horizontal-spacing;
 }
 
 .header-text {
@@ -17,8 +21,10 @@
 }
 
 .sub-heading {
+  @include apply-font-body;
   max-width: 445px;
-  @include apply-font-heading-m;
+
+  padding-bottom:66px;
 }
 
 // header {
