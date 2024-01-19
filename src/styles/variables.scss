@@ -28,4 +28,14 @@ $font-family: "Space Grotesk";
     line-height: $lineHeight;
     letter-spacing: $letterSpacing;
   }
+
+  @mixin apply-font-body {
+    @include font-family;
+    @include common-font-styles;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  
   

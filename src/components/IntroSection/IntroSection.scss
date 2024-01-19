@@ -12,6 +12,13 @@
 
 .header-text {
   @include apply-font-heading-xl;
+  padding-bottom:43px;
+
+}
+
+.sub-heading {
+  max-width: 445px;
+  @include apply-font-heading-m;
 }
 
 // header {
