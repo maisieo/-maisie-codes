@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+/*reminder of them:
+$primary-color: #151515;
+$highlight-color: #4ee1a0;
+$base-spacing: 16px;
+$light-color-2: #ffffff;
+*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 39px;
+}
+
+.name {
+  color: $light-color-2;
+//   font-family: $font-family;
+  @include apply-font-styles;
+}
+
+/*social icons*/
+
+.social-icons {
+  display: flex;
+  min-width: 43px;
+  gap: 20px;
+}
+
+.social-icons i {
+  color: $light-color-2;
+}
