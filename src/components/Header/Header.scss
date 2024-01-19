@@ -10,13 +10,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 39px;
+  padding: 39px 0;
 }
 
 .name {
   color: $light-color-2;
 //   font-family: $font-family;
-  @include apply-font-styles;
+  @include apply-font-heading-m;
 }
 
 /*social icons*/

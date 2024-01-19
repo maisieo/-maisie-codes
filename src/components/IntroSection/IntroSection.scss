@@ -1,10 +1,18 @@
-// @import "../../styles/variables";
+@import "../../styles/variables";
 // /*reminder of them:
 // $primary-color: #151515;
 // $highlight-color: #4ee1a0;
 // $base-spacing: 16px;
 // $light-color-2: #ffffff;
 // */
+
+.intro-section {
+  padding-top:88px;
+}
+
+.header-text {
+  @include apply-font-heading-xl;
+}
 
 // header {
 //   display: flex;
