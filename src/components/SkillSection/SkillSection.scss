@@ -6,3 +6,31 @@
 // $light-color-2: #ffffff;
 // */
 
+.skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    .skill {
+      width: calc(50% - 7px); // 50% width with spacing between skills
+      margin-bottom: 14px; // Spacing between skills
+  
+      h1 {
+        color:white;
+        font-family: "Space Grotesk";
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -1.5px;
+      }
+  
+      p {
+        color:  #D9D9D9;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+      }
+    }
+  }
+  
