@@ -4,6 +4,8 @@
   padding-top: 88px;
   padding-left: 20px;
   padding-right: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 90px;
 }
 
 .header-text {
@@ -35,9 +37,24 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
+  text-decoration: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.286px;
+  text-transform: uppercase;
 }
 
 .contact-button:hover {
   color: green;
   transition: all 0.3s;
 }
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 10px;
+}/*# sourceMappingURL=IntroSection.css.map */

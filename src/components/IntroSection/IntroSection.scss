@@ -12,6 +12,8 @@
   padding-top:88px;
   padding-left: $horizontal-spacing;
   padding-right: $horizontal-spacing;
+  border-bottom: 1px solid white;
+  padding-bottom:90px;
 }
 
 .header-text {
@@ -28,6 +30,16 @@
 
 .contact-button {
   @include apply-font-body;
+  text-decoration:underline;
+  text-decoration-color:#4EE1A0;
+  text-underline-offset: 10px;
+  font-size: 16px;
+  color:white;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.286px;
+  text-transform: uppercase;
+
 }
 
 .contact-button:hover {
@@ -37,6 +49,6 @@
 
 .underline {
   text-decoration: underline;
-  text-decoration-color: green;
-  text-decoration-offset: 10px;
+  text-decoration-color: #4EE1A0;
+  text-underline-offset: 10px;
 }
