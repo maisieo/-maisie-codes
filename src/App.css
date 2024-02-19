@@ -13,6 +13,11 @@
   margin: 0;
 }
 
+.App > * {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /*
   Typographic tweaks
   3. Add accessible line-height

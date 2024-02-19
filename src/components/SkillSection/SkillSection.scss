@@ -1,22 +1,15 @@
-@import "../../styles/variables";
-// /*reminder of them:
-// $primary-color: #151515;
-// $highlight-color: #4ee1a0;
-// $base-spacing: 16px;
-// $light-color-2: #ffffff;
-// */
-
 .skill-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top:72px;
   
     .skill {
       width: calc(50% - 7px); // 50% width with spacing between skills
       margin-bottom: 14px; // Spacing between skills
   
       h1 {
-        color:white;
+        color: var(--White, #FFF);
         font-family: "Space Grotesk";
         font-size: 48px;
         font-weight: 700;
@@ -25,11 +18,19 @@
       }
   
       p {
-        color:  #D9D9D9;
+        color: var(--Grey, #D9D9D9);
         font-family: "Space Grotesk";
         font-size: 18px;
         font-weight: 500;
         line-height: 28px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+  
+      .skill {
+        width: 100%;
       }
     }
   }
