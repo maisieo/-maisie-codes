@@ -1,3 +1,11 @@
+@import "../../styles/variables";
+/*reminder of them:
+// $primary-color: #151515;
+// $highlight-color: #4ee1a0;
+// $base-spacing: 16px;
+// $light-color-2: #ffffff;
+// */
+
 /* Reset code*/
 /*
   1. Use a more-intuitive box-sizing model.
@@ -14,8 +22,8 @@
 }
 
 .App > * {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $horizontal-spacing;
+  padding-right: $horizontal-spacing;
 }
 
 /*
