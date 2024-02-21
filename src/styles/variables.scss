@@ -24,7 +24,7 @@ $horizontal-spacing:20px;
     line-height: $lineHeight;
   }
   
-  @mixin apply-font-heading-xl($size: 88px, $lineHeight: 88px, $letterSpacing: -2.5px) {
+  @mixin apply-font-heading-xl($size: 88px, $lineHeight: 97px, $letterSpacing: -2.5px) {
     @include font-family;
     @include common-font-styles;
     color: $light-color-2;
