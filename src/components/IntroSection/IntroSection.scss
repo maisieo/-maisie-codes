@@ -14,10 +14,18 @@
   padding-bottom:90px;
   position:relative;
 
+  .text-content {
+    max-width:623px;
+  }
+
   .profile-img {
     position:absolute;
-    left: 426px;
+    left: 563px;
     top: 164px;
+    width: 500px;
+    height: 468px;
+    overflow: hidden;
+    display: inline-block;
 
     img {
       height:468px!important;

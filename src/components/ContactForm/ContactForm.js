@@ -61,7 +61,7 @@ function ContactForm() {
           onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <div>
+          <div className="input-section">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -72,7 +72,7 @@ function ContactForm() {
               required
             />
           </div>
-          <div>
+          <div className="input-section">
             <label htmlFor="email">Email</label>
             <input
               type="email"
@@ -83,7 +83,7 @@ function ContactForm() {
               required
             />
           </div>
-          <div>
+          <div className="input-section">
             <label htmlFor="message">Message</label>
             <textarea
               name="message"
