@@ -21,11 +21,6 @@
   margin: 0;
 }
 
-.App > * {
-  padding-left: $horizontal-spacing;
-  padding-right: $horizontal-spacing;
-}
-
 /*
   Typographic tweaks
   3. Add accessible line-height

@@ -12,7 +12,7 @@ function IntroSection() {
       </div>
       <div className="profile-img">
        
-        <img src="path.jpg" alt="Maisie O'Brien-Butcher" />
+        <img src="../../../assets/imgs/Me.jpg" alt="Maisie O'Brien-Butcher" />
       </div>
     </section>
   );
