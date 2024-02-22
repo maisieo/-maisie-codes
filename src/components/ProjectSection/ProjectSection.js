@@ -63,15 +63,15 @@ function ProjectSection() {
                   <p>{skill}</p>
                 </div>
               ))}
+              <a
+                href={project.githubUrl}
+                className="github-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
             </div>
-            <a
-              href={project.githubUrl}
-              className="github-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
           </div>
         ))}
       </section>

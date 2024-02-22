@@ -27,6 +27,7 @@
         flex-basis: calc(50% - 20px); 
         display: flex;
         flex-direction: column;
+        padding-bottom: 42px;
   
         .project-image {
           width: 100%; 
@@ -36,13 +37,36 @@
         h3 {
                 margin-top: 20px;
                 color: var(--White, #FFF);
-                font-family: "Space Grotesk";
+                // font-family: "Space Grotesk";
                 font-size: 24px !important;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 32px;
         }
       }
+    }
+
+    .skill-container {
+        display: flex;
+
+        .skill {
+            margin-right: 13px;
+            color: var(--Grey, #D9D9D9);
+            font-feature-settings: 'clig' off, 'liga' off;
+            /* font-family: "Space Grotesk"; */
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+
+        }
+
+        .github-link {
+            color: var(--Grey, #D9D9D9);
+            display: flex;
+            align-items: center;
+            text-decoration:none;
+        }
     }
   }
   
