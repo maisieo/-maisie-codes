@@ -4,12 +4,10 @@ import './SkillSection.scss';
 
 let skills = [
     { title: 'HTML', description: '3 years' },
-    { title: 'CSS', description: '3 years' },
-    { title: 'Adobe XD', description: 'Experience' },
-    { title: 'Figma', description: 'Experience' },
-    { title: 'Email Builds', description: 'Experience' },
-    { title: 'React', description: 'Experience' },
-    { title: 'Salesforce', description: 'Experience' }
+    { title: 'CSS/SCSS', description: '3 years' },
+    { title: 'Javascript', description: '3 years' },
+    { title: 'React', description: '2 years' },
+    { title: 'Salesforce', description: '2 years' }
 ];
 
 function SkillSection() {

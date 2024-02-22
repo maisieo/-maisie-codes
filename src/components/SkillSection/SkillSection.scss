@@ -1,11 +1,10 @@
 .skill-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top:72px;
   
     .skill {
-      width: calc(50% - 7px); 
+      width: calc(33.33% - 7px); 
       margin-bottom: 40px; 
   
       h1 {
