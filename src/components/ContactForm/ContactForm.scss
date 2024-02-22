@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+// /*reminder of them:
+// $primary-color: #151515;
+// $highlight-color: #4ee1a0;
+// $base-spacing: 16px;
+// $light-color-2: #ffffff;
+// */
+
+.contact-section {
+    display: flex;
+    color:green;
+
+    .contact-info h2 {
+        @include apply-font-heading-xl
+    }
+  
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 23.8px;
+      padding: 80px 0;
+  
+      .project {
+        flex-basis: calc(50% - 20px); 
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 42px;
+  
+        .project-image {
+          width: 100%; 
+          height: auto; 
+        }
+  
+        h3 {
+                margin-top: 20px;
+                color: var(--White, #FFF);
+                // font-family: "Space Grotesk";
+                font-size: 24px !important;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+        }
+      }
+    }
+
+    .skill-container {
+        display: flex;
+
+        .skill {
+            margin-right: 13px;
+            color: var(--Grey, #D9D9D9);
+            font-feature-settings: 'clig' off, 'liga' off;
+            /* font-family: "Space Grotesk"; */
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+
+        }
+
+        .github-link {
+            color: var(--Grey, #D9D9D9);
+            display: flex;
+            align-items: center;
+            text-decoration:none;
+        }
+    }
+  }
+  
