@@ -28,7 +28,7 @@ $horizontal-spacing:20px;
     @include font-family;
     @include common-font-styles;
     color: $light-color-2;
-    font-weight:700px;
+    font-weight:700;
     font-size: $size;
     line-height: $lineHeight;
     letter-spacing: $letterSpacing;

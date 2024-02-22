@@ -6,14 +6,12 @@ $base-spacing: 16px;
 $light-color-2: #ffffff;
 */
 
-header {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 39px;
   padding-bottom:39px;
-  padding-left: $horizontal-spacing;
-  padding-right: $horizontal-spacing;
 }
 
 .name {
