@@ -10,9 +10,31 @@
     display: flex;
     color:green;
 
-    .contact-info h2 {
-        @include apply-font-heading-xl
+    > * {
+      width: 50%;
     }
+
+    .contact-info {
+
+      h2 {
+        @include apply-font-heading-xl
+      }
+      p {
+        @include apply-font-body
+      }
+       
+    }
+
+    .contact-form {
+
+      input, textarea {
+        background-color: transparent;
+        border:none;
+      }
+
+    }
+
+
   
     .projects-container {
       display: flex;
