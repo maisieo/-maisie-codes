@@ -12,6 +12,19 @@
   padding-top:88px;
   border-bottom: 1px solid white;
   padding-bottom:90px;
+  position:relative;
+
+  .profile-img {
+    position:absolute;
+    left: 426px;
+    top: 164px;
+
+    img {
+      height:468px!important;
+      max-width:unset!important;
+    }
+  }
+
 }
 
 .header-text {
