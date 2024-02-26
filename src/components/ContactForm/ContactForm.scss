@@ -25,19 +25,30 @@
     }
 
     .contact-form {
+      flex:1;
+
       .input-section {
         display: flex;
         flex:1;
+        padding-bottom: 10px;
+        border-bottom: 1px solid grey;
+        padding-top: 32px;
 
         label {
           flex-basis:108px;
+          color: grey;
+          text-transform: uppercase;
         }
 
         input, textarea {
-          flex-basis:300px;
+          flex:1;
           background-color: transparent;
           border:none;
 
+        }
+
+        textarea {
+          height:71px;
         }
       }
 
