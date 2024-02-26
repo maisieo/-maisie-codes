@@ -28,7 +28,7 @@
     .input-section {
       display: flex;
       padding-bottom: 10px;
-      border-bottom: 1px solid grey;
+      border-bottom: 1px solid white;
       padding-top: 32px;
 
       label {
@@ -55,6 +55,8 @@
 
       .contact-button {
         border: none;
+        background-color: transparent;
+        margin-top:32px;
       }
     }
   }
