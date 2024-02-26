@@ -93,7 +93,10 @@ function ContactForm() {
               required
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <div className="button-container">
+            <button type="submit" className="contact-button">Send</button>
+          </div>
+          
         </form>
       </div>
     </div>
