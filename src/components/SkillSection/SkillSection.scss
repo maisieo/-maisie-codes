@@ -1,3 +1,25 @@
+@import "../../styles/variables";
+// /*reminder of them:
+// $primary-color: #151515;
+// $highlight-color: #4ee1a0;
+// $base-spacing: 16px;
+// $light-color-2: #ffffff;
+// */
+
+
+/*Large desktop spacing*/
+.skill-section {
+  max-width: 1141px;
+  margin:0 auto;
+}
+
+/*Smaller desktop spacing*/
+.skill-section {
+  // max-width: 900px;
+  margin:0 auto;
+}/*# sourceMappingURL=App.css.map */
+
+
 .skill-section {
     display: flex;
     flex-wrap: wrap;

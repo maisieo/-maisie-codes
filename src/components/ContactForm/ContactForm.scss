@@ -7,8 +7,13 @@
 // */
 
 .contact-section {
-  display: flex;
   color: green;
+
+  .inner-wrapper {
+    display: flex;
+    max-width:1141px;
+    margin: 0 auto;
+  }
 
   .contact-info {
     width: 448px;

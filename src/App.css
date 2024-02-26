@@ -71,12 +71,3 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-/*Large desktop spacing*/
-.App {
-  max-width: 1141px;
-}
-
-/*Smaller desktop spacing*/
-.App {
-  max-width: 900px;
-}/*# sourceMappingURL=App.css.map */

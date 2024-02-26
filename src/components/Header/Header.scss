@@ -6,7 +6,15 @@ $base-spacing: 16px;
 $light-color-2: #ffffff;
 */
 
-.header {
+/*Large desktop spacing*/
+.header-wrapper {
+  max-width: 1141px;
+  margin: 0 auto;
+}
+
+/*Smaller desktop spacing*/
+
+.header-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

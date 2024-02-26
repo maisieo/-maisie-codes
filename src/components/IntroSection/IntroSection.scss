@@ -6,6 +6,19 @@
 // $light-color-2: #ffffff;
 // */
 
+/*Large desktop spacing*/
+.intro-section {
+  max-width: 1141px;
+  margin:0 auto;
+}
+
+/*Smaller desktop spacing*/
+.intro-section {
+  // max-width: 900px;
+  margin:0 auto;
+}/*# sourceMappingURL=App.css.map */
+
+
 .intro-section {
   display: flex;
   flex-direction: row;
@@ -19,16 +32,16 @@
   }
 
   .profile-img {
-    position:absolute;
-    left: 563px;
-    top: 164px;
-    width: 500px;
-    height: 468px;
+    position: absolute;
+    left: 525px;
+    top: 12px;
+    width: 560px;
+    /* height: 900px; */
     overflow: hidden;
     display: inline-block;
 
     img {
-      height:468px!important;
+      height:600px!important;
       max-width:unset!important;
     }
   }
