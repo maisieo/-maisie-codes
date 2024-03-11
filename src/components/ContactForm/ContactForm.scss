@@ -8,11 +8,15 @@
 
 .contact-section {
   color: green;
+  background-color: #242424;
 
   .inner-wrapper {
     display: flex;
     max-width: 1141px;
     margin: 0 auto;
+    border-bottom: 1px solid white;
+    padding-bottom: 90px;
+    padding-top: 50px;
   }
 
   .contact-info {

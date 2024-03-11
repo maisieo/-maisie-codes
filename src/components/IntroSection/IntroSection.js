@@ -11,7 +11,7 @@ function IntroSection() {
         <a className="contact-button" href='google.com'>Get in touch</a>
       </div>
       <div className="profile-img">
-       <img src="https://i.ibb.co/gr9Tbtx/Untitled-design-1.png" alt="Untitled-design-1" border="0"/>
+       {/* <img src="https://i.ibb.co/gr9Tbtx/Untitled-design-1.png" alt="Untitled-design-1" border="0"/> */}
       </div>
       
     </section>
