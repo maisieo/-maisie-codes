@@ -1,59 +1,55 @@
+/* Import variables */
 @import "../../styles/variables";
-// /*reminder of them:
-// $primary-color: #151515;
-// $highlight-color: #4ee1a0;
-// $base-spacing: 16px;
-// $light-color-2: #ffffff;
-// */
 
-
-/*Large desktop spacing*/
+/* Set max-width for skill section */
 .skill-section {
   max-width: 1141px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-/*Smaller desktop spacing*/
-.skill-section {
-  // max-width: 900px;
-  margin:0 auto;
-}/*# sourceMappingURL=App.css.map */
-
-
-.skill-section {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:72px;
-    margin-bottom:100px;
-  
-    .skill {
-      width: calc(33.33% - 7px); 
-      margin-bottom: 40px; 
-  
-      h1 {
-        color: var(--White, #FFF);
-        // font-family: "Space Grotesk";
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 56px;
-        letter-spacing: -1.5px;
-      }
-  
-      p {
-        color: var(--Grey, #D9D9D9);
-        // font-family: "Space Grotesk";
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 28px;
-      }
-    }
-  
-    @media (max-width: 768px) {
-      flex-direction: column;
-  
-      .skill {
-        width: 100%;
-      }
-    }
+/* Adjust max-width for tablet screens */
+@media (max-width: 1024px) {
+  .skill-section {
+    max-width: 900px;
   }
-  
+}
+
+/* Style for skills */
+.skill-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+
+.skill-section .skill {
+  width: calc(33.33% - 7px); 
+  margin-bottom: 40px; 
+}
+
+.skill-section .skill h1 {
+  color: var(--White, #FFF);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+}
+
+.skill-section .skill p {
+  color: var(--Grey, #D9D9D9);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .skill-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skill-section .skill {
+    width: 100%;
+  }
+}
