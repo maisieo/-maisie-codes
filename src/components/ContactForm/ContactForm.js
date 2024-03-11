@@ -85,7 +85,7 @@ function ContactForm() {
             <div className="input-section">
               <textarea
                 name="message"
-                placeholder="Message"
+                placeholder="Hi Maisie..."
                 value={formData.message}
                 onChange={handleChange}
                 required
