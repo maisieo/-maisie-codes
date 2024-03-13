@@ -12,6 +12,7 @@
 
   .inner-wrapper {
     display: flex;
+    flex-direction: row;
     max-width: 1141px;
     margin: 0 auto;
     border-bottom: 1px solid white;
@@ -78,4 +79,15 @@
       }
     }
   }
+}
+
+/*Tablet styles*/
+@media screen and (max-width:1024px) {
+  
+}
+
+/*Mobile styles*/
+
+@media screen and (max-width:768px) {
+  
 }

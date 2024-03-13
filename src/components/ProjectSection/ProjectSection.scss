@@ -8,78 +8,85 @@
 
 .project-section {
   max-width: 1141px;
-  margin:0 auto;
+  margin: 0 auto;
 }
-
 
 .project-section {
   // max-width: 900px;
-  margin:0 auto;
-}/*# sourceMappingURL=App.css.map */
-
-
+  margin: 0 auto;
+} /*# sourceMappingURL=App.css.map */
 
 .project-section {
-    .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .project-header h2 {
-        @include apply-font-heading-xl
-    }
-  
-    .projects-container {
+  .project-header h2 {
+    @include apply-font-heading-xl;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23.8px;
+    padding: 80px 0;
+
+    .project {
+      flex-basis: calc(50% - 20px);
       display: flex;
-      flex-wrap: wrap;
-      gap: 23.8px;
-      padding: 80px 0;
-  
-      .project {
-        flex-basis: calc(50% - 20px); 
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 42px;
-  
-        .project-image {
-          width: 100%; 
-          height: auto; 
-        }
-  
-        h3 {
-                margin-top: 20px;
-                color: var(--White, #FFF);
-                // font-family: "Space Grotesk";
-                font-size: 24px !important;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 32px;
-        }
+      flex-direction: column;
+      padding-bottom: 42px;
+
+      .project-image {
+        width: 100%;
+        height: auto;
+      }
+
+      h3 {
+        margin-top: 20px;
+        color: var(--White, #fff);
+        // font-family: "Space Grotesk";
+        font-size: 24px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
       }
     }
+  }
 
-    .skill-container {
-        display: flex;
+  .skill-container {
+    display: flex;
 
-        .skill {
-            margin-right: 13px;
-            color: var(--Grey, #D9D9D9);
-            font-feature-settings: 'clig' off, 'liga' off;
-            /* font-family: "Space Grotesk"; */
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 28px;
+    .skill {
+      margin-right: 13px;
+      color: var(--Grey, #d9d9d9);
+      font-feature-settings: "clig" off, "liga" off;
+      /* font-family: "Space Grotesk"; */
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
 
-        }
-
-        .github-link {
-            color: var(--Grey, #D9D9D9);
-            display: flex;
-            align-items: center;
-            text-decoration:none;
-        }
+    .github-link {
+      color: var(--Grey, #d9d9d9);
+      display: flex;
+      align-items: center;
+      text-decoration: none;
     }
   }
-  
+}
+
+/*Tablet styles*/
+@media (max-width: 1024px) {
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start!important;
+  }
+}
+
+/*Mobile styles*/
+@media screen and (max-width: 768px) {
+}

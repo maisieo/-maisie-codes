@@ -13,11 +13,7 @@
 }
 
 /* Adjust max-width for tablet screens */
-@media (max-width: 1024px) {
-  .skill-section {
-    max-width: 900px;
-  }
-}
+
 
 /* Style for skills */
 .skill-section {
@@ -57,4 +53,21 @@
   .skill-section .skill {
     width: 100%;
   }
+}
+
+
+@media (max-width: 1024px) {
+  .skill-section {
+    max-width: 900px;
+  }
+}
+
+/*Tablet styles*/
+@media screen and (max-width:1024px) {
+  
+}
+
+/*Mobile styles*/
+
+@media screen and (max-width:768px) {
 }
