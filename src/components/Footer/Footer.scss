@@ -7,7 +7,15 @@ $base-spacing: 16px;
 $light-color-2: #ffffff;
 */
 
+.footer {
+  background-color: #242424;
+}
+
 .footer-wrapper {
+  max-width: 1141px;
+  margin: 0 auto;
+  padding-top: 39px;
+  padding-bottom: 39px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
