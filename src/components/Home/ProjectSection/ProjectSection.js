@@ -8,16 +8,16 @@ let projects = [
     title: "Calculator app",
     skills: ["HTML", "CSS", "JavaScript"],
     imageUrl: '/assets/imgs/Calculator.jpg',
-    githubUrl: null,
-    liveUrl: null,
+    githubUrl: "https://google.com",
+    liveUrl: null, // Add liveUrl key for Calculator app
   },
   {
     id: 2,
     title: "Live client websites",
     skills: ["HTML", "CSS", "Javascript", "LWC"],
     imageUrl: "assets/imgs/Q-restaurant-page.JPG",
-    githubUrl: "/live-client-website",
-    liveUrl: "/live-client-website",
+    githubUrl: "/live-client-website", // Route path for live client website
+    liveUrl: "/live-client-website", // Add liveUrl key for Live client websites
   },
   {
     id: 3,
@@ -25,17 +25,18 @@ let projects = [
     skills: ["HTML", "CSS", 'Javascript'],
     imageUrl: "assets/imgs/CB.jpg",
     githubUrl: "https://www.closebrothers.com/",
-    liveUrl: "https://www.closebrothers.com/",
+    liveUrl: "https://www.closebrothers.com/", // Add liveUrl key for Client website 2
   },
   {
     id: 4,
     title: "Email Builds",
     skills: ["React", "Node.js"],
     imageUrl: "https://s3-alpha-sig.figma.com/img/ec87/6c36/0e50169307231e9f96a3eefbc3920fb5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IhayQBk1vAgvTMx1Zfrdx3j~RJ9bi63ePWIypcO2JssNxGNUe0rKFxnrZ0EIzAlH4xb4CgtdPKWpQ-KoFhZMs1K6Dn~tdje~Pks~Kr~iUj67eAy7Xkg1ZX-6ifjFg8LQefpqX9tEa-nBqzO7hR9ClLEirSIgkoDNti5jwYWHPhsc8bNktctRwVRXCNdNwSD~tyvtcQL6dXnUZ~u4zuPC7S~XAs00ZM-8quOsdUwt2mkt2sVVImNaz4IxH-~OdcNIdldwM~jpASAiVSrm8dsL0RB0sr~iDrqzrpYsXXYv2hh5dHsasXx7vpLOXX6OAZ-dbTg2r7IIfGtUNJoSaTa4Ag__",
-    githubUrl: null, // No GitHub URL provided for Email Builds
-    liveUrl: null,
+    githubUrl: "https://google.com",
+    liveUrl: null, // Add liveUrl key for Email Builds
   },
 ];
+
 
 function ProjectSection() {
   return (
@@ -50,13 +51,14 @@ function ProjectSection() {
       <section className="projects-container">
         {projects.map((project) => (
           <div key={project.id} className="project">
-            <Link to={project.liveUrl || "#"} onClick={() => console.log("Project clicked!")}>
+            <a href={project.githubUrl} onClick={() => console.log("Project clicked!")}>
               <img
                 src={project.imageUrl || "path/to/default/image.jpg"}
                 alt={project.title}
                 className="project-image"
               />
-            </Link>
+
+            </a>
             <h3>{project.title}</h3>
             <div className="skill-container">
               {project.skills.map((skill, index) => (
@@ -64,17 +66,16 @@ function ProjectSection() {
                   <p>{skill}</p>
                 </div>
               ))}
-              {project.githubUrl && (
-                <a
-                  href={project.githubUrl}
-                  className="github-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github"></i>
-                </a>
-              )}
+              <a
+                href={project.githubUrl}
+                className="github-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
             </div>
+            
           </div>
         ))}
       </section>
