@@ -1,11 +1,11 @@
 // Home.js
 import React from "react";
-import Header from "./components/Header/Header";
-import IntroSection from "./components/IntroSection/IntroSection";
-import SkillSection from "./components/SkillSection/SkillSection";
-import ProjectSection from "./components/ProjectSection/ProjectSection";
-import ContactForm from "./components/ContactForm/ContactForm";
-import Footer from "./components/Footer/Footer";
+import Header from "./Header/Header";
+import IntroSection from "./IntroSection/IntroSection";
+import SkillSection from "./SkillSection/SkillSection";
+import ProjectSection from "./ProjectSection/ProjectSection";
+import ContactForm from "./ContactForm/ContactForm";
+import Footer from "./Footer/Footer";
 
 function Home() {
   return (
