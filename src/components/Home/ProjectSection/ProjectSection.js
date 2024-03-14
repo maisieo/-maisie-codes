@@ -7,36 +7,36 @@ let projects = [
     id: 1,
     title: "Calculator app",
     skills: ["HTML", "CSS", "JavaScript"],
-    imageUrl: '/assets/imgs/Calculator.jpg',
-    githubUrl: "https://google.com",
-    liveUrl: null, // Add liveUrl key for Calculator app
+    imageUrl: "/assets/imgs/Calculator.jpg",
+    githubUrl: null,
+    liveUrl: null,
   },
   {
     id: 2,
     title: "Live client websites",
     skills: ["HTML", "CSS", "Javascript", "LWC"],
     imageUrl: "assets/imgs/Q-restaurant-page.JPG",
-    githubUrl: "/live-client-website", // Route path for live client website
-    liveUrl: "/live-client-website", // Add liveUrl key for Live client websites
+    githubUrl: "/live-client-websites",
+    liveUrl: "/live-client-websites",
   },
   {
     id: 3,
     title: "Client website 2",
-    skills: ["HTML", "CSS", 'Javascript'],
+    skills: ["HTML", "CSS", "Javascript"],
     imageUrl: "assets/imgs/CB.jpg",
     githubUrl: "https://www.closebrothers.com/",
-    liveUrl: "https://www.closebrothers.com/", // Add liveUrl key for Client website 2
+    liveUrl: "https://www.closebrothers.com/",
   },
   {
     id: 4,
     title: "Email Builds",
     skills: ["React", "Node.js"],
-    imageUrl: "https://s3-alpha-sig.figma.com/img/ec87/6c36/0e50169307231e9f96a3eefbc3920fb5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IhayQBk1vAgvTMx1Zfrdx3j~RJ9bi63ePWIypcO2JssNxGNUe0rKFxnrZ0EIzAlH4xb4CgtdPKWpQ-KoFhZMs1K6Dn~tdje~Pks~Kr~iUj67eAy7Xkg1ZX-6ifjFg8LQefpqX9tEa-nBqzO7hR9ClLEirSIgkoDNti5jwYWHPhsc8bNktctRwVRXCNdNwSD~tyvtcQL6dXnUZ~u4zuPC7S~XAs00ZM-8quOsdUwt2mkt2sVVImNaz4IxH-~OdcNIdldwM~jpASAiVSrm8dsL0RB0sr~iDrqzrpYsXXYv2hh5dHsasXx7vpLOXX6OAZ-dbTg2r7IIfGtUNJoSaTa4Ag__",
-    githubUrl: "https://google.com",
-    liveUrl: null, // Add liveUrl key for Email Builds
+    imageUrl:
+      "https://s3-alpha-sig.figma.com/img/ec87/6c36/0e50169307231e9f96a3eefbc3920fb5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IhayQBk1vAgvTMx1Zfrdx3j~RJ9bi63ePWIypcO2JssNxGNUe0rKFxnrZ0EIzAlH4xb4CgtdPKWpQ-KoFhZMs1K6Dn~tdje~Pks~Kr~iUj67eAy7Xkg1ZX-6ifjFg8LQefpqX9tEa-nBqzO7hR9ClLEirSIgkoDNti5jwYWHPhsc8bNktctRwVRXCNdNwSD~tyvtcQL6dXnUZ~u4zuPC7S~XAs00ZM-8quOsdUwt2mkt2sVVImNaz4IxH-~OdcNIdldwM~jpASAiVSrm8dsL0RB0sr~iDrqzrpYsXXYv2hh5dHsasXx7vpLOXX6OAZ-dbTg2r7IIfGtUNJoSaTa4Ag__",
+    githubUrl: null,
+    liveUrl: null,
   },
 ];
-
 
 function ProjectSection() {
   return (
@@ -51,14 +51,28 @@ function ProjectSection() {
       <section className="projects-container">
         {projects.map((project) => (
           <div key={project.id} className="project">
-            <a href={project.githubUrl} onClick={() => console.log("Project clicked!")}>
-              <img
-                src={project.imageUrl || "path/to/default/image.jpg"}
-                alt={project.title}
-                className="project-image"
-              />
+            {project.liveUrl ? (
+              <Link to={project.liveUrl} className="project-link">
+                <img
+                  src={project.imageUrl || "path/to/default/image.jpg"}
+                  alt={project.title}
+                  className="project-image"
+                />
+              </Link>
+            ) : (
 
-            </a>
+                <a
+                  href={project.githubUrl}
+                  onClick={() => console.log("Project clicked!")}
+                className='project-link'
+                >
+                  <img
+                    src={project.imageUrl || "path/to/default/image.jpg"}
+                    alt={project.title}
+                    className="project-image"
+                  />
+                </a>
+            )}
             <h3>{project.title}</h3>
             <div className="skill-container">
               {project.skills.map((skill, index) => (
@@ -66,16 +80,17 @@ function ProjectSection() {
                   <p>{skill}</p>
                 </div>
               ))}
-              <a
-                href={project.githubUrl}
-                className="github-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-github"></i>
-              </a>
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  className="github-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              )}
             </div>
-            
           </div>
         ))}
       </section>

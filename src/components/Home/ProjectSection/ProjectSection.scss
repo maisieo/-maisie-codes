@@ -39,7 +39,7 @@
       flex-direction: column;
       padding-bottom: 22px;
 
-      a:not(.github-link) {
+      .project-link {
         height: 300px;
         overflow: hidden;
         transition: opacity 0.3s;
@@ -99,4 +99,7 @@
 
 /*Mobile styles*/
 @media screen and (max-width: 768px) {
+  .project {
+    flex-basis:100%!important;
+  }
 }
