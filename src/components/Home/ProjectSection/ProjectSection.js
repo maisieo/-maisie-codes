@@ -12,7 +12,7 @@ let projects = [
   },
   {
     id: 2,
-    title: "Client website",
+    title: "Live client websites",
     skills: ["HTML", "CSS", "Javascript", "LWC"],
     imageUrl:
       "assets/imgs/Q-restaurant-page.JPG",
