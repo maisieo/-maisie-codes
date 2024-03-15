@@ -1,6 +1,7 @@
 import "./App.scss";
+import EmailBuilds from "./components/Home/EmailBuilds/EmailBuilds";
 import Home from "./components/Home/Home";
-import LiveWebsites from "./components/Home/LiveWebsites/LiveWebsites"
+import LiveWebsites from "./components/Home/LiveWebsites/LiveWebsites";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" index element={<Home/>} />
           <Route path="/live-client-websites" index element={<LiveWebsites/>} />
+          <Route path="/email-builds" index element={<EmailBuilds/>} />
         </Routes>
       </div>
     </BrowserRouter>
