@@ -12,3 +12,18 @@
     }
 
 }
+
+
+/*Tablet styles*/
+@media screen and (max-width:1024px) {
+  
+}
+
+/*Mobile styles*/
+
+@media screen and (max-width:768px) {
+    .image-container img {
+        width:100%!important;
+    }
+}
+

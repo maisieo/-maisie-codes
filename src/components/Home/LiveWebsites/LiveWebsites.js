@@ -14,14 +14,14 @@ function LiveWebsites() {
       <section>
         <h2>Section 1</h2>
         <div className="image-container">
-          <img src="/assets/imgs/Q1.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Q2.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Q3.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Q4.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Q5.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Q6.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Q7.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Q8.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client Work/Q1.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client work/Q2.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client work/Q3.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client work/Q4.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client work/Q5.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client work/Q6.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client work/Q7.jpg" alt="Website 1" />
+          <img src="/assets/imgs/Client work/Q8.jpg" alt="Website 1" />
 
         </div>
       </section>
@@ -30,11 +30,10 @@ function LiveWebsites() {
       <section>
         <h2>Section 2</h2>
         <div className='image-container'>
-        <img src="/assets/imgs/CB1.png" alt="Website 1" />
-          <img src="/assets/imgs/CB2.png" alt="Website 1" />
-          <img src="/assets/imgs/CB3.png" alt="Website 1" />
-          <img src="/assets/imgs/CB3.png" alt="Website 1" />
-          <img src="/assets/imgs/CB4.png" alt="Website 1" />
+        <img src="/assets/imgs/Client work/CB1.png" alt="Website 1" />
+          <img src="/assets/imgs/Client work/CB2.png" alt="Website 1" />
+          <img src="/assets/imgs/Client work/CB3.png" alt="Website 1" />
+          <img src="/assets/imgs/Client work/CB4.png" alt="Website 1" />
 
         </div>
       </section>
