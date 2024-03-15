@@ -5,18 +5,26 @@ import "./ProjectSection.scss";
 let projects = [
   {
     id: 1,
+    title: "This website!",
+    skills: ["React", "SCSS", "Javascript"],
+    imageUrl: "/assets/imgs/Calculator.jpg",
+    githubUrl: "https://github.com/maisieo/-maisie-codes",
+    liveUrl: "https://github.com/maisieo/-maisie-codes",
+  },
+  {
+    id: 1,
     title: "Calculator app",
     skills: ["HTML", "CSS", "JavaScript"],
     imageUrl: "/assets/imgs/Calculator.jpg",
-    githubUrl: null,
-    liveUrl: null,
+    githubUrl: "https://github.com/maisieo/calculator-app/",
+    liveUrl: "https://calculator-app-maisie.netlify.app/",
   },
   {
     id: 2,
     title: "Live client websites",
     skills: ["HTML", "CSS", "Javascript", "LWC"],
     imageUrl: "assets/imgs/Q-restaurant-page.JPG",
-    githubUrl: "/live-client-websites",
+    githubUrl: null,
     liveUrl: "/live-client-websites",
   },
   {
