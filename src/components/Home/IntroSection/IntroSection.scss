@@ -7,8 +7,8 @@
 // */
 
 .intro-section {
-  max-width: 1141px;
-  margin: 0 auto;
+  // max-width: 1141px;
+  // margin: 0 auto;
   display: flex;
   flex-direction: row;
   padding-top: 88px;
@@ -17,7 +17,7 @@
   position: relative;
 
   @media (max-width: 600px) {
-    flex-direction: column-reverse; /* Reversed flex-direction for mobile */
+    flex-direction: column-reverse;
   }
 }
 

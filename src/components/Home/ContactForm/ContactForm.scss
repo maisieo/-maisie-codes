@@ -89,5 +89,9 @@
 /*Mobile styles*/
 
 @media screen and (max-width:768px) {
+
+  .inner-wrapper {
+    flex-direction: column!important;
+  }
   
 }
