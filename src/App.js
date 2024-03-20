@@ -1,4 +1,5 @@
 import "./App.scss";
+import React from "react";
 import EmailBuilds from "./components/Home/EmailBuilds/EmailBuilds";
 import Home from "./components/Home/Home";
 import About from "./components/Home/About/About";
