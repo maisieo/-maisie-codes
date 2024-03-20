@@ -1,15 +1,20 @@
 /* Import variables */
 @import "../../../styles/variables.scss";
 
-.image-container {
-    display: flex;
-    flex-direction: row;
-    gap:20px;
-    flex-wrap: wrap;
+.back-link a {
+    color:white;
+    // text-decoration :none;
+}
 
-    img {
-        width:calc(50% - 20px);
-    }
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+
+
+    // img {
+    //     width:calc(50% - 20px);
+    // }
 
 }
 

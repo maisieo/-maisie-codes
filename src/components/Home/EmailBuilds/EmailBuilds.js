@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ContactForm from "../ContactForm/ContactForm";
+import { Link } from "react-router-dom";
 
 import './EmailBuilds.scss';
 
@@ -9,7 +10,9 @@ function EmailBuilds() {
   return (
     <div>
       <Header />
-
+      <div className='back-link'>
+        <Link to='/'>Back</Link>
+      </div>
       {/* First Section */}
       <section>
         <h2>Section 1</h2>

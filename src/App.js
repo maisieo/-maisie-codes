@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter scrollRestoration='auto'>
       <div className="App">
         <Routes>
           <Route path="/" index element={<Home/>} />
