@@ -33,6 +33,7 @@
         height: 300px;
         overflow: hidden;
         transition: opacity 0.3s;
+        border-radius: 13px;
 
         &:hover {
           opacity: 0.5;
