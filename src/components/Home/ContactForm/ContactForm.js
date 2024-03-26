@@ -96,6 +96,7 @@ function ContactForm() {
     //     </div>
     //   </div>
     // </div>
+
     <div className="contact-section">
       <form
         name="contact v1"
@@ -107,14 +108,7 @@ function ContactForm() {
         <input type="hidden" name="form-name" value="contact v1" />
         <div className="input-section">
           <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            // placeholder="Name"
-            // value={formData.name}
-            // onChange={handleChange}
-            // required
-          />
+          <input type="text" name="name" />
         </div>
         <div className="input-section">
           <label htmlFor="email">Email</label>
@@ -131,6 +125,22 @@ function ContactForm() {
           Send message
         </button>
       </div>
+
+      <form name="contact" netlify>
+        <p>
+          <label>
+            Name <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Email <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </div>
   );
 }
