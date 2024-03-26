@@ -6,17 +6,18 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  padding: 0rem 1rem;
-  background-color: rgba(0,0,0,.25);
+  padding:53px 1rem;
+  background-color: var(--primary-color);
 }
 
 .button-prev,
 .button-next {
-  position: absolute;
-  font-family:"Material Icons";
-  font-size: 4rem;
-  cursor: pointer;
-  user-select: none;
+    color:white;
+    position: absolute;
+    font-family:"Material Icons";
+    font-size: 4rem;
+    cursor: pointer;
+    user-select: none;
 }
 
 .button-prev {
@@ -56,7 +57,7 @@
 
 .bubble-outer {
   cursor: pointer;
-  border : 3px solid black;
+  border : 3px solid white;
   border-radius: 8px;
 }
 
@@ -164,3 +165,23 @@
     -o-animation: slide-left-out .5s 1 forwards;
     animation: slide-left-out .5s 1 forwards;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .gallery-track {
+      width: 100%;
+      aspect-ratio: auto; 
+      height: auto; 
+      padding-top: 56.25%;
+    }
+  
+    .slide-image {
+      position: relative; 
+      width: 100%;
+      height: 100%; 
+    }
+
+    .gallery-footer, .button-next, .button-prev {
+        display: none;
+    }
+  }
