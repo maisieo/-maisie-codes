@@ -15,7 +15,7 @@ let projects = [
     id: 1,
     title: "Calculator app",
     skills: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/assets/imgs/Apps/Calculator.jpg",
+    // imageUrl: "/assets/imgs/Apps/Calculator.jpg",
     githubUrl: "https://github.com/maisieo/calculator-app/",
     liveUrl: "https://calculator-app-maisie.netlify.app/",
   },
