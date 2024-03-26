@@ -1,5 +1,5 @@
 /* Import variables */
-@import "../../../styles/variables.scss";
+@import "../../../styles/variables.css";
 
 .skill-section {
   display: flex;

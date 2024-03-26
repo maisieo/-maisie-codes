@@ -1,42 +1,36 @@
-// @import '../styles/variables';
-@import "styles/variables";
+/* Reset code */
 
-/* Reset code*/
-
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+/* Use a more-intuitive box-sizing model */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/*
-  2. Remove default margin
-*/
+
+/* Remove default margin */
 * {
   margin: 0;
 }
 
+/* Apply padding to elements inside .App */
 .App > * > * {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-/*
-  Typographic tweaks
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
+/* Typographic tweaks */
 
+/* Add accessible line-height */
 body {
   line-height: 1.5;
+}
+
+/* Improve text rendering */
+body {
   -webkit-font-smoothing: antialiased;
 }
 
-/*
-  5. Improve media defaults
-*/
+/* Improve media defaults */
 img,
 picture,
 video,
@@ -46,9 +40,7 @@ svg {
   max-width: 100%;
 }
 
-/*
-  6. Remove built-in form typography styles
-*/
+/* Remove built-in form typography styles */
 input,
 button,
 textarea,
@@ -56,9 +48,7 @@ select {
   font: inherit;
 }
 
-/*
-  7. Avoid text overflows
-*/
+/* Avoid text overflows */
 p,
 h1,
 h2,
@@ -69,16 +59,14 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/*
-  8. Create a root stacking context
-*/
+/* Create a root stacking context */
 #root,
 #__next {
   isolation: isolate;
 }
 
+/* Apply background color and minimum height to #root */
 #root {
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   min-height: 100vh;
 }
-

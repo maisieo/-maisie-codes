@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ProjectSection.scss";
+import "./ProjectSection.css";
 
 let projects = [
   {
     id: 1,
     title: "This website!",
-    skills: ["React", "SCSS", "Javascript"],
+    skills: ["React", "css", "Javascript"],
     imageUrl: "/assets/imgs/Calculator.jpg",
     githubUrl: "https://github.com/maisieo/-maisie-codes",
     liveUrl: "https://github.com/maisieo/-maisie-codes",

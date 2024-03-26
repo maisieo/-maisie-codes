@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ContactForm from "../ContactForm/ContactForm";
 
-// import '.../.EmailBuilds/EmailBuilds.scss';
+// import '.../.EmailBuilds/EmailBuilds.css';
 
 function LiveWebsites() {
   return (

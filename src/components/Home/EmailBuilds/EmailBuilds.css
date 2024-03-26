@@ -1,0 +1,25 @@
+/* Import variables */
+@import url("../../../styles/variables.css");
+
+.back-link a {
+    color: white;
+    /* text-decoration: none; */
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .image-container img {
+        width: 100% !important;
+    }
+}

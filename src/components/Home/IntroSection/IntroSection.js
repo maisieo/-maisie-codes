@@ -1,5 +1,5 @@
 import React from 'react';
-import './IntroSection.scss';
+import './IntroSection.css';
 
 function IntroSection() {
   return (

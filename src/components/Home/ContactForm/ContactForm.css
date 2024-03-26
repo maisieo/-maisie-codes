@@ -1,0 +1,107 @@
+/* Import variables */
+@import url("../../../styles/variables.css");
+/*reminder of them:
+$primary-color: #151515;
+$highlight-color: #4ee1a0;
+$base-spacing: 16px;
+$light-color-2: #ffffff;
+*/
+
+.contact-section {
+  color: #4EE1A0;
+  background-color: #242424;
+}
+
+.contact-section .inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  /* max-width: 1141px; */
+  /* margin: 0 auto; */
+  border-bottom: 1px solid white;
+  padding-bottom: 90px;
+  padding-top: 50px;
+}
+
+.contact-section .contact-info {
+  width: 370px;
+  margin-right: 197px;
+}
+
+.contact-section .contact-info h2 {
+  /* apply-font-heading-xl mixin */
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  color: white;
+}
+
+.contact-section .contact-info p {
+  /* apply-font-body mixin */
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+}
+
+.contact-section .contact-form {
+  flex: 1;
+}
+
+.contact-section .contact-form .input-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  padding-top: 32px;
+}
+
+.contact-section .contact-form .input-section input,
+.contact-section .contact-form .input-section textarea {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  color: #999;
+}
+
+.contact-section .contact-form .input-section input:focus,
+.contact-section .contact-form .input-section textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-section .contact-form .input-section input::placeholder,
+.contact-section .contact-form .input-section textarea::placeholder {
+  color: #999;
+  text-transform: uppercase;
+}
+
+.contact-section .contact-form .input-section textarea {
+  height: 71px;
+}
+
+.contact-section .contact-form .button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-section .contact-form .button-container .contact-button {
+  border: none;
+  background-color: transparent;
+  margin-top: 32px;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .contact-section .inner-wrapper {
+    flex-direction: column!important;
+  }
+}

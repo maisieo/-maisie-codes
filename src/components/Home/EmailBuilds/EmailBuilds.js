@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 import ContactForm from "../ContactForm/ContactForm";
 import { Link } from "react-router-dom";
 
-import './EmailBuilds.scss';
+import './EmailBuilds.css';
 
 function EmailBuilds() {
   return (
