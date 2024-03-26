@@ -82,21 +82,24 @@ function ContactForm() {
                 required
               />
             </div>
-    <div className="input-section">
-      <textarea
-        name="message"
-        placeholder="Hi Maisie..."
-        value={formData.message}
-        onChange={handleChange}
-        required
-      ></textarea>
-    </div>
-
+            <div className="input-section">
+              <textarea
+                name="message"
+                placeholder="Hi Maisie..."
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+            </div>
+            <div className="button-container">
+              <button type="submit" className="contact-button">
+                Send message
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </div>
-
   );
 }
 
