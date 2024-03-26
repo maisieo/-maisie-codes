@@ -114,17 +114,16 @@ function ContactForm() {
           <label htmlFor="email">Email</label>
           <input id="email" type="email" name="email" placeholder="Email" />
         </div>
-
         <div className="input-section">
           <label htmlFor="email">Message</label>
           <textarea name="message" placeholder="Hi Maisie..."></textarea>
+        </div>{" "}
+        <div className="button-container">
+          <button type="submit" className="contact-button">
+            Send message
+          </button>
         </div>
       </form>
-      <div className="button-container">
-        <button type="submit" className="contact-button">
-          Send message
-        </button>
-      </div>
 
       <form name="contact" netlify>
         <p>
