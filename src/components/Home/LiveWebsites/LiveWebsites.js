@@ -1,53 +1,56 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import ContactForm from "../ContactForm/ContactForm";
+import React, { useState, useEffect } from "react";
+import "./LiveWebsites.css";
 
-// import '.../.EmailBuilds/EmailBuilds.css';
+let LiveWebsites = () => {
+  let [current, setCurrent] = useState(0);
+  let images = [
+    "/assets/imgs/Client work/CB1.png",
+    "/assets/imgs/Client work/CB2.png",
+    "/assets/imgs/Client work/CB3.png",
+    "/assets/imgs/Client work/CB4.png",
+    "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ];
 
-function LiveWebsites() {
+  let nextImage = () =>
+    setCurrent(current === images.length - 1 ? 0 : current + 1);
+  let prevImage = () =>
+    setCurrent(current === 0 ? images.length - 1 : current - 1);
+  let jumpImage = (index) => setCurrent(index);
+
+
   return (
-    <div>
-      <Header />
-      
-
-      {/* First Section */}
-      <div className='back-link'>
-        <Link to='/'>Back</Link>
+    <div className="gallery-container">
+      <span className="button-prev" onClick={prevImage}>
+        chevron_left
+      </span>
+      <span className="button-next" onClick={nextImage}>
+        chevron_right
+      </span>
+      <div className="gallery-track">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="slide-image"
+            style={{
+              backgroundImage: `url(${image})`,
+              transform: `translateX(${(index - current) * 100}%)`,
+            }}
+          />
+        ))}
       </div>
-
-      <section>
-        <h2>Section 1</h2>
-        <div className="image-container">
-          <img src="/assets/imgs/Client Work/Q1.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Client work/Q2.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Client work/Q3.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Client work/Q4.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Client work/Q5.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Client work/Q6.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Client work/Q7.jpg" alt="Website 1" />
-          <img src="/assets/imgs/Client work/Q8.jpg" alt="Website 1" />
-
-        </div>
-      </section>
-
-      {/* Second Section */}
-      <section>
-        <h2>Section 2</h2>
-        <div className='image-container'>
-        <img src="/assets/imgs/Client work/CB1.png" alt="Website 1" />
-          <img src="/assets/imgs/Client work/CB2.png" alt="Website 1" />
-          <img src="/assets/imgs/Client work/CB3.png" alt="Website 1" />
-          <img src="/assets/imgs/Client work/CB4.png" alt="Website 1" />
-
-        </div>
-      </section>
-
-      <ContactForm />
-      <Footer />
+      <div className="gallery-footer">
+        {images.map((_, index) => (
+          <div
+            key={index}
+            className={`bubble-outer ${index === current ? "active" : ""}`}
+            onClick={() => jumpImage(index)}
+          >
+            <div className="bubble-inner" />
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default LiveWebsites;

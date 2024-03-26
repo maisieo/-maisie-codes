@@ -13,27 +13,27 @@
 }
 
 /* Apply padding to elements inside .App */
-.App > * > * {
+/* .App > * > * {
   padding-left: 40px;
   padding-right: 40px;
-}
+} */
 
 /*Tablet padding*/
 @media screen and (max-width:1024px) {
-  .App > * > * {
+  /* .App > * > * {
     padding-left: 30px;
     padding-right: 30px;
-  }
+  } */
   
 }
 
 /*Mobile padding*/
 
 @media screen and (max-width:768px) {
-  .App > * > * {
+  /* .App > * > * {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  } */
   
 }
 
