@@ -125,7 +125,7 @@ function ContactForm() {
         </div>
       </form>
 
-      <form name="contact"         data-netlify="true">
+      <form name="contact" data-netlify="true">
         <p>
           <label>
             Name <input type="text" name="name" />
@@ -141,25 +141,50 @@ function ContactForm() {
         </p>
       </form>
 
-
-
       <form name="contact" method="post">
-      <p>
-        <label htmlFor="name">Name</label> <br />
-        <input type="text" id="name" name="name" required />
-      </p>
-      <p>
-        <label htmlFor="email">Email</label> <br />
-        <input type="email" id="email" name="email" required />
-      </p>
-      <p>
-        <label htmlFor="message">Message</label> <br />
-        <textarea id="message" name="message" required></textarea>
-      </p>
-      <p>
-        <input type="submit" value="Submit message" />
-      </p>
-    </form>
+        <p>
+          <label htmlFor="name">Name</label> <br />
+          <input type="text" id="name" name="name" required />
+        </p>
+        <p>
+          <label htmlFor="email">Email</label> <br />
+          <input type="email" id="email" name="email" required />
+        </p>
+        <p>
+          <label htmlFor="message">Message</label> <br />
+          <textarea id="message" name="message" required></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Submit message" />
+        </p>
+      </form>
+
+      {/* Try 3 */}
+      <form
+        name="contact v1"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <input type="hidden" name="form-name" value="contact v1"></input>
+
+        <div>
+          <label>
+            first name<input type="text" name="first-name"></input>
+          </label>
+        </div>
+        <div>
+          <label>
+            email<input type="email" name="email"></input>
+          </label>
+        </div>
+        <div>
+          <label>
+            Any comments?<textarea name="comments"></textarea>
+          </label>
+        </div>
+        <button type="submit">Submit the results</button>
+      </form>
     </div>
   );
 }
