@@ -35,24 +35,6 @@ $light-color-2: #ffffff;
   /* max-width: unset!important; */
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
-  .intro-section .profile-img {
-    left: 325px;
-    top: 12px;
-  }
-}
-
-@media (max-width: 600px) {
-  .intro-section .profile-img {
-    position: unset;
-    width: 100%;
-  }
-  .intro-section .profile-img img {
-    height: auto !important;
-    max-width: 100% !important;
-  }
-}
-
 .intro-section .header-text {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
@@ -63,19 +45,6 @@ $light-color-2: #ffffff;
   padding-bottom: 43px;
 }
 
-@media (max-width: 1024px) {
-  .intro-section .header-text {
-    font-size: 72px;
-  }
-}
-
-@media (max-width: 600px) {
-  .intro-section .header-text {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
-
 .intro-section .sub-heading {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
@@ -83,18 +52,6 @@ $light-color-2: #ffffff;
   font-size: 18px;
   max-width: 445px;
   padding-bottom: 66px;
-}
-
-@media (max-width: 1024px) {
-  .intro-section .sub-heading {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .intro-section .sub-heading {
-    font-size: 16px;
-  }
 }
 
 .contact-button {
@@ -120,4 +77,47 @@ $light-color-2: #ffffff;
   text-decoration: underline;
   text-decoration-color: #4ee1a0;
   text-underline-offset: 10px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .intro-section .profile-img {
+    left: 325px;
+    top: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-section {
+    flex-direction: column-reverse;
+    padding-top:unset;
+
+  }
+  .intro-section .profile-img {
+    position: unset;
+    width: 100%;
+    padding-bottom:20px;
+    display: flex;
+    justify-content: center;
+  }
+  .intro-section .profile-img img {
+    height: 222px !important;
+    max-width: 100% !important;
+    
+  }
+  .intro-section .header-text {
+    font-size: 40px!important;
+    line-height: 50px;
+  }
+  .intro-section .sub-heading {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro-section .header-text {
+    font-size: 72px;
+  }
+  .intro-section .sub-heading {
+    font-size: 16px;
+  }
 }
