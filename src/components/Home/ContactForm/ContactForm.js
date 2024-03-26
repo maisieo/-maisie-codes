@@ -102,6 +102,7 @@ function ContactForm() {
         method="post"
         data-netlify="true"
         onSubmit="submit"
+        netlify
       >
         <input type="hidden" name="form-name" value="contact v1" />
         <div className="input-section">
