@@ -11,14 +11,7 @@ let projects = [
     githubUrl: "https://github.com/maisieo/-maisie-codes",
     liveUrl: "https://github.com/maisieo/-maisie-codes",
   },
-  {
-    id: 1,
-    title: "Calculator app",
-    skills: ["HTML", "CSS", "JavaScript"],
-    imageUrl: "/assets/imgs/Apps/Calculator.jpg",
-    githubUrl: "https://github.com/maisieo/calculator-app/",
-    liveUrl: "https://calculator-app-maisie.netlify.app/",
-  },
+
   {
     id: 2,
     title: "Live client websites",
@@ -37,6 +30,14 @@ let projects = [
     githubUrl: null,
     liveUrl: "/email-builds",
   },
+  {
+    id: 1,
+    title: "Calculator app",
+    skills: ["HTML", "CSS", "JavaScript"],
+    imageUrl: "/assets/imgs/Apps/Calculator.jpg",
+    githubUrl: "https://github.com/maisieo/calculator-app/",
+    liveUrl: "https://calculator-app-maisie.netlify.app/",
+  }
 ];
 
 function ProjectSection() {
