@@ -52,12 +52,12 @@ $light-color-2: #ffffff;
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
-  .header {
+  .footer {
     padding-left: var(--horizontal-padding-tablet);
     padding-right: var(--horizontal-padding-tablet);
   }
 
-  .header-wrapper .name {
+  .footer-wrapper .name {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
@@ -65,12 +65,12 @@ $light-color-2: #ffffff;
     letter-spacing: -0.44px;
   }
 
-  .header-wrapper .social-icons {
+  .footer-wrapper .social-icons {
     align-items: center;
     margin-top: 20px;
   }
 
-  .header-wrapper .social-icons i {
+  .footer-wrapper .social-icons i {
     height: 25px;
     width: 25px;
   }
