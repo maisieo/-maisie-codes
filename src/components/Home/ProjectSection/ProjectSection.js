@@ -6,7 +6,7 @@ let projects = [
   {
     id: 1,
     title: "This website!",
-    skills: ["React", "css", "Javascript"],
+    skills: ["React", "CSS", "Javascript", 'Node.js'],
     imageUrl: "/assets/imgs/Apps/ThisWebsite.png",
     githubUrl: "https://github.com/maisieo/-maisie-codes",
     liveUrl: "https://github.com/maisieo/-maisie-codes",
@@ -44,7 +44,7 @@ function ProjectSection() {
     <div className="project-section">
       <header className="project-header">
         <h2>Projects</h2>
-        <a className="contact-button" href="https://google.com">
+        <a className="contact-button" href="#contact-section">
           Contact me
         </a>
       </header>

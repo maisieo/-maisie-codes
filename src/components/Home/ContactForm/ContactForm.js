@@ -45,7 +45,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="contact-section">
+    <div id="contact-section">
       <div className="inner-wrapper">
         <div className="contact-info">
           <h2>Contact</h2>
