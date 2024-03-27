@@ -7,7 +7,8 @@ $light-color-2: #ffffff;
 */
 
 .intro-section {
-  padding: 0 40px;
+  padding-left: var(--horizontal-padding-desktop);
+padding-right:var(--horizontal-padding-desktop);;
   display: flex;
   flex-direction: row;
   padding-top: 88px;
@@ -92,7 +93,8 @@ $light-color-2: #ffffff;
   .intro-section {
     flex-direction: column-reverse;
     padding-top:unset;
-    padding:0 20px;
+    padding-left: var(--horizontal-padding-mobile);
+padding-right:var(--horizontal-padding-mobile);
   }
 
   .intro-section .profile-img {
@@ -118,7 +120,8 @@ $light-color-2: #ffffff;
 
 @media (max-width: 1024px) {
   .intro-section{
-    padding:0 30px;
+    padding-left: var(--horizontal-padding-tablet);
+padding-right:var(--horizontal-padding-tablet);
   }
 
   .intro-section .header-text {

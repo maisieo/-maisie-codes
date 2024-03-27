@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 .email-container {
-  padding:0 40px;
+  padding-left: var(--horizontal-padding-desktop);
+padding-right:var(--horizontal-padding-desktop);;
 }
 
 .gallery-container {
@@ -154,7 +155,8 @@
 /* Mobile styles */
 @media (max-width: 768px) {
 .email-container{
-  padding:0 20px;
+  padding-left: var(--horizontal-padding-mobile);
+padding-right:var(--horizontal-padding-mobile);
 }
 
     .gallery-track {
@@ -176,7 +178,8 @@
 
   @media screen and (max-width:1024px) {
     .email-container {
-      padding:0 30px;
+      padding-left: var(--horizontal-padding-tablet);
+padding-right:var(--horizontal-padding-tablet);
     }
     
   }

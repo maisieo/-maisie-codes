@@ -1,7 +1,8 @@
 .contact-section {
   color: #4ee1a0;
   background-color: #242424;
-  padding: 0 40px;
+  padding-left: var(--horizontal-padding-desktop);
+padding-right:var(--horizontal-padding-desktop);
 }
 
 .contact-section .inner-wrapper {
@@ -87,14 +88,16 @@
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
   .contact-section {
-    padding: 0 30px;
+    padding-left: var(--horizontal-padding-tablet);
+padding-right:var(--horizontal-padding-tablet);
   }
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .contact-section {
-    padding: 0 20px;
+    padding-left: var(--horizontal-padding-mobile);
+padding-right:var(--horizontal-padding-mobile);
   }
   .contact-section .inner-wrapper {
     flex-direction: column !important;

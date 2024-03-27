@@ -6,7 +6,8 @@ $base-spacing: 16px;
 $light-color-2: #ffffff;
 */
 .project-section {
-  padding: 0 40px;
+  padding-left: var(--horizontal-padding-desktop);
+padding-right:var(--horizontal-padding-desktop);;
 }
 .project-section .project-header {
   display: flex;
@@ -79,7 +80,8 @@ $light-color-2: #ffffff;
 /* Tablet styles */
 @media (max-width: 1024px) {
 .project-section {
-  padding:0 30px;
+  padding-left: var(--horizontal-padding-tablet);
+padding-right:var(--horizontal-padding-tablet);
 }
 
   .project-section .project-header {
@@ -91,7 +93,8 @@ $light-color-2: #ffffff;
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .project-section {
-    padding:0 20px;
+    padding-left: var(--horizontal-padding-mobile);
+padding-right:var(--horizontal-padding-mobile);
   }
   .project-section .project {
     flex-basis: 100% !important;
