@@ -6,7 +6,8 @@
   --light-color-1:  #D9D9D9;
   --light-color-2: #ffffff;
   --font-family: "Space Grotesk";
-  --horizontal-padding-desktop:165px;
+  --horizontal-padding-desktop:40px;
   --horizontal-padding-tablet:40px;
   --horizontal-padding-mobile:30px;
+  --max-inner-width:1300px;
 }

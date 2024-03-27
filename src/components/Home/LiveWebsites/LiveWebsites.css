@@ -1,8 +1,36 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-.live-websites {
+.back-link {
   padding-left: var(--horizontal-padding-desktop);
   padding-right: var(--horizontal-padding-desktop);
+  color: white;
+  display: flex;
+  align-items: center;
+  max-width: var(--max-inner-width);
+}
+
+.back-link a {
+  text-decoration: none!important;
+  font-size: 20px;
+}
+
+.back-link a:visited {
+  color:white;
+  text-decoration: none;
+}
+
+.back-link:hover a {
+ color:#4EE1A0;
+}
+
+.back-link .icon {
+  margin-right: 5px; 
+  transition: transform 0.3s ease;
+}
+
+.back-link:hover .icon {
+  transform: translateX(-3px);
+  color:#4EE1A0;
 }
 
 .gallery-container {
@@ -39,14 +67,14 @@
 }
 
 .gallery-track {
-  aspect-ratio: 168/100;
+  aspect-ratio: 1/10;
   position: relative;
-  width: 80%;
+  width: 49%;
   overflow: hidden;
 }
 
 .slide-image {
-  aspect-ratio: 168/100;
+  aspect-ratio: 1/10;
   position: absolute;
   background-size: cover;
   width: 100%;
@@ -163,7 +191,7 @@
     width: 100%;
     aspect-ratio: auto;
     height: auto;
-    padding-top: 56.25%;
+    padding-top: 20px;
   }
 
   .slide-image {

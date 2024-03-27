@@ -3,20 +3,19 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ContactForm from "../ContactForm/ContactForm";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 let LiveWebsites = () => {
   let [current, setCurrent] = useState(0);
   let images = [
     "https://i.ibb.co/RTNydQ4/Q1.jpg",
     "https://i.ibb.co/T0kWXQG/Q2.jpg",
-    "https://i.ibb.co/gVfMQHF/Q4.jpg",
     "https://i.ibb.co/n75f9SM/Q7.jpg",
     "https://i.ibb.co/znSgmBT/Q8.jpg",
     "https://i.ibb.co/k1sbWty/Q-restaurant-page.jpg",
-    "https://i.ibb.co/Mph58Gg/CB.jpg",
     "https://i.ibb.co/dPF5FZZ/CB1.png",
-    "https://i.ibb.co/N7y3bhs/CB3.png",
-    "https://i.ibb.co/qJQSSMQ/CB4.png",
+    "https://i.ibb.co/N7y3bhs/CB3.png"
   ];
 
   let nextImage = () =>
@@ -32,6 +31,7 @@ let LiveWebsites = () => {
     <div className="live-websites">
       <Header />
       <div className="back-link">
+        <FontAwesomeIcon icon={faArrowLeft} className="icon" />
         <Link to="/">Back</Link>
       </div>
       <div className="gallery-container">

@@ -10,6 +10,9 @@ $light-color-2: #ffffff;
 .header {
   padding-left: var(--horizontal-padding-desktop);
   padding-right: var(--horizontal-padding-desktop);
+  max-width: var(--max-inner-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-wrapper {
@@ -29,7 +32,6 @@ $light-color-2: #ffffff;
 }
 
 /* social icons */
-
 .header-wrapper .social-icons {
   display: flex;
   min-width: 43px;
@@ -42,7 +44,9 @@ $light-color-2: #ffffff;
   width: 23px;
 }
 
-/* Media Queries */
+.header-wrapper .social-icons i:hover {
+  color: #4ee1a0;
+}
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
@@ -50,18 +54,13 @@ $light-color-2: #ffffff;
     padding-left: var(--horizontal-padding-tablet);
     padding-right: var(--horizontal-padding-tablet);
   }
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding-left: var(--horizontal-padding-mobile);
-    padding-right: var(--horizontal-padding-mobile);
-  }
 
   .header-wrapper .name {
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
+    line-height: 32px;
+    letter-spacing: -0.44px;
   }
 
   .header-wrapper .social-icons {
@@ -70,7 +69,15 @@ $light-color-2: #ffffff;
   }
 
   .header-wrapper .social-icons i {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .header {
+    padding-left: var(--horizontal-padding-mobile);
+    padding-right: var(--horizontal-padding-mobile);
   }
 }

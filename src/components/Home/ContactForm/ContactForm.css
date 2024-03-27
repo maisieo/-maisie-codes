@@ -11,6 +11,9 @@ padding-right:var(--horizontal-padding-desktop);
   border-bottom: 1px solid white;
   padding-bottom: 90px;
   padding-top: 84px;
+  max-width: var(--max-inner-width);
+  margin-left: auto;
+margin-right: auto;;
 }
 
 .contact-section .contact-info {
