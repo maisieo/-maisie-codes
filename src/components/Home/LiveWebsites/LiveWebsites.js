@@ -11,7 +11,7 @@ let LiveWebsites = () => {
   let images = [
     "https://i.ibb.co/RTNydQ4/Q1.jpg",
     "https://i.ibb.co/T0kWXQG/Q2.jpg",
-    "https://i.ibb.co/n75f9SM/Q7.jpg",,
+    "https://i.ibb.co/n75f9SM/Q7.jpg",
     "https://i.ibb.co/k1sbWty/Q-restaurant-page.jpg",
     "https://i.ibb.co/dPF5FZZ/CB1.png",
     "https://i.ibb.co/N7y3bhs/CB3.png"

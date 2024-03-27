@@ -67,14 +67,14 @@
 }
 
 .gallery-track {
-  aspect-ratio: 1/10;
+  aspect-ratio: 6/11;
   position: relative;
   width: 49%;
   overflow: hidden;
 }
 
 .slide-image {
-  aspect-ratio: 1/10;
+  aspect-ratio: 6/11;
   position: absolute;
   background-size: cover;
   width: 100%;
