@@ -7,7 +7,7 @@ $light-color-2: #ffffff;
 */
 .project-section {
   padding-left: var(--horizontal-padding-desktop);
-padding-right:var(--horizontal-padding-desktop);;
+  padding-right: var(--horizontal-padding-desktop);
 }
 .project-section .project-header {
   display: flex;
@@ -16,16 +16,20 @@ padding-right:var(--horizontal-padding-desktop);;
 }
 
 .project-section .project-header h2 {
-  font-size: 2.25rem;
+  color: white;
+  /* font-family: "Space Grotesk"; */
+  font-size: 88px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 88px;
+  letter-spacing: -2.5px;
 }
 
 .project-section .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
-  padding: 80px 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 23px;
+  padding: 80px 0 130px;
 }
 
 .project-section .projects-container .project {
@@ -35,7 +39,7 @@ padding-right:var(--horizontal-padding-desktop);;
 }
 
 .project-section .projects-container .project .project-link {
-  height: 300px;
+  height: 400px;
   overflow: hidden;
   transition: opacity 0.3s;
   border-radius: 13px;
@@ -79,10 +83,10 @@ padding-right:var(--horizontal-padding-desktop);;
 
 /* Tablet styles */
 @media (max-width: 1024px) {
-.project-section {
-  padding-left: var(--horizontal-padding-tablet);
-padding-right:var(--horizontal-padding-tablet);
-}
+  .project-section {
+    padding-left: var(--horizontal-padding-tablet);
+    padding-right: var(--horizontal-padding-tablet);
+  }
 
   .project-section .project-header {
     flex-direction: column;
@@ -94,7 +98,7 @@ padding-right:var(--horizontal-padding-tablet);
 @media screen and (max-width: 768px) {
   .project-section {
     padding-left: var(--horizontal-padding-mobile);
-padding-right:var(--horizontal-padding-mobile);
+    padding-right: var(--horizontal-padding-mobile);
   }
   .project-section .project {
     flex-basis: 100% !important;

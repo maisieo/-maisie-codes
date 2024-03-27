@@ -7,7 +7,7 @@ let projects = [
     id: 1,
     title: "This website!",
     skills: ["React", "css", "Javascript"],
-    imageUrl: "/assets/imgs/Calculator.jpg",
+    imageUrl: "/assets/imgs/Apps/Calculator.jpg",
     githubUrl: "https://github.com/maisieo/-maisie-codes",
     liveUrl: "https://github.com/maisieo/-maisie-codes",
   },
@@ -15,7 +15,7 @@ let projects = [
     id: 1,
     title: "Calculator app",
     skills: ["HTML", "CSS", "JavaScript"],
-    // imageUrl: "/assets/imgs/Apps/Calculator.jpg",
+    imageUrl: "/assets/imgs/Apps/Calculator.jpg",
     githubUrl: "https://github.com/maisieo/calculator-app/",
     liveUrl: "https://calculator-app-maisie.netlify.app/",
   },
@@ -43,7 +43,7 @@ function ProjectSection() {
   return (
     <div className="project-section">
       <header className="project-header">
-        <h2>My Projects</h2>
+        <h2>Projects</h2>
         <a className="contact-button" href="https://google.com">
           Contact me
         </a>

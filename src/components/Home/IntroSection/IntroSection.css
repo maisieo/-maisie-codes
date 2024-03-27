@@ -8,31 +8,33 @@ $light-color-2: #ffffff;
 
 .intro-section {
   padding-left: var(--horizontal-padding-desktop);
-padding-right:var(--horizontal-padding-desktop);;
+  padding-right: var(--horizontal-padding-desktop);
   display: flex;
   flex-direction: row;
   padding-top: 88px;
   border-bottom: 1px solid white;
   padding-bottom: 90px;
-  position: relative;
 }
 
 .intro-section .text-content {
-  max-width: 623px;
+  flex-basis:calc(50%);
+  flex-shrink:0;
 }
 
 .intro-section .profile-img {
-  position: absolute;
+  flex-basis:50%;
+  /* position: absolute;
   left: 525px;
   top: 12px;
-  /* width: 560px; */
   overflow: hidden;
-  display: inline-block;
+  display: inline-block; */
+  
 }
 
 .intro-section .profile-img img {
-  /* height: 600px!important; */
-  /* max-width: unset!important; */
+  height: 600px!important;
+  width:auto;
+  max-width: unset!important;
 }
 
 .intro-section .header-text {
@@ -89,28 +91,26 @@ padding-right:var(--horizontal-padding-desktop);;
 } */
 
 @media (max-width: 768px) {
-
   .intro-section {
     flex-direction: column-reverse;
-    padding-top:unset;
+    padding-top: unset;
     padding-left: var(--horizontal-padding-mobile);
-padding-right:var(--horizontal-padding-mobile);
+    padding-right: var(--horizontal-padding-mobile);
   }
 
   .intro-section .profile-img {
     position: unset;
     width: 100%;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
   }
   .intro-section .profile-img img {
     height: 222px !important;
     max-width: 100% !important;
-    
   }
   .intro-section .header-text {
-    font-size: 40px!important;
+    font-size: 40px !important;
     line-height: 50px;
   }
   .intro-section .sub-heading {
@@ -119,9 +119,9 @@ padding-right:var(--horizontal-padding-mobile);
 }
 
 @media (max-width: 1024px) {
-  .intro-section{
+  .intro-section {
     padding-left: var(--horizontal-padding-tablet);
-padding-right:var(--horizontal-padding-tablet);
+    padding-right: var(--horizontal-padding-tablet);
   }
 
   .intro-section .header-text {

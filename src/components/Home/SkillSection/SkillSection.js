@@ -3,11 +3,12 @@ import './SkillSection.css';
 
 
 let skills = [
-    { title: 'HTML', description: '3 years' },
-    { title: 'CSS/SCSS', description: '3 years' },
-    { title: 'Javascript', description: '3 years' },
-    { title: 'React', description: '2 years' },
-    { title: 'Salesforce', description: '2 years' }
+    { title: 'HTML', description: 'Experience: over 3 years' },
+    { title: 'CSS/SASS', description: 'Experience: over 3 years' },
+    { title: 'Javascript', description: 'Experience: over 3 years' },
+    { title: 'React', description: 'Experience: 2 years' },
+    { title: 'Salesforce', description: 'Experience: 2 years' },
+    { title: 'Agile', description: 'Experience: 2 years' }
 ];
 
 function SkillSection() {
