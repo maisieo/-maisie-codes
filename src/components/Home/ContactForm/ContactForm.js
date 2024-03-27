@@ -50,8 +50,7 @@ function ContactForm() {
         <div className="contact-info">
           <h2>Contact</h2>
           <p>
-            Feel free to reach out to me with any questions. I'm open to hearing
-            about roles or projects you're currently working on.
+            Feel free to reach out to me with any questions. I'm open to new opportunities and collaborations, or if you just want to connect!
           </p>
         </div>
         <div className="contact-form">
