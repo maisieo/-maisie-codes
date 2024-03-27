@@ -57,4 +57,8 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .skill-section .skill {
+    width:100%;
+  }
 }
