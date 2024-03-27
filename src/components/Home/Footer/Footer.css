@@ -10,7 +10,7 @@ $light-color-2: #ffffff;
 .footer {
   background-color: #242424;
   padding-left: var(--horizontal-padding-desktop);
-padding-right:var(--horizontal-padding-desktop);;
+  padding-right: var(--horizontal-padding-desktop);
 }
 
 .footer-wrapper {
@@ -62,17 +62,14 @@ padding-right:var(--horizontal-padding-desktop);;
 @media screen and (max-width: 1024px) {
   .footer {
     padding-left: var(--horizontal-padding-tablet);
-padding-right:var(--horizontal-padding-tablet);
+    padding-right: var(--horizontal-padding-tablet);
   }
-  
-  
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .footer {
     padding-left: var(--horizontal-padding-mobile);
-padding-right:var(--horizontal-padding-mobile);
+    padding-right: var(--horizontal-padding-mobile);
   }
-  
 }

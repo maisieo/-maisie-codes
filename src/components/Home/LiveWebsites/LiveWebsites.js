@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ContactForm from "../ContactForm/ContactForm";
@@ -24,8 +24,12 @@ let LiveWebsites = () => {
   let prevImage = () =>
     setCurrent(current === 0 ? images.length - 1 : current - 1);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className='live-websites'>
+    <div className="live-websites">
       <Header />
       <div className="back-link">
         <Link to="/">Back</Link>

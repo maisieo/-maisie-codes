@@ -7,7 +7,7 @@ let projects = [
     id: 1,
     title: "This website!",
     skills: ["React", "css", "Javascript"],
-    imageUrl: "/assets/imgs/Apps/Calculator.jpg",
+    imageUrl: "/assets/imgs/Apps/ThisWebsite.png",
     githubUrl: "https://github.com/maisieo/-maisie-codes",
     liveUrl: "https://github.com/maisieo/-maisie-codes",
   },

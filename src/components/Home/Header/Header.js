@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-wrapper">
-        <p className="name">Maisie O'Brien-Butcher </p>
+        <p className="name">Maisie O'BB </p>
 
         <div className="social-icons">
           {/* Social Icons */}
