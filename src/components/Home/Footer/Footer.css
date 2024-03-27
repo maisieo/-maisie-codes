@@ -81,5 +81,23 @@ $light-color-2: #ffffff;
   .footer {
     padding-left: var(--horizontal-padding-mobile);
     padding-right: var(--horizontal-padding-mobile);
+    padding-bottom:50px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:0;
+  }
+
+  .footer-wrapper .name {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.333px;
+}
+
+  .footer-wrapper .social-icons {
+    margin-top:20px;
   }
 }

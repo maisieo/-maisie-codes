@@ -86,6 +86,8 @@ $light-color-2: #ffffff;
 @media screen and (max-width: 1024px) {
   .intro-section {
     padding-top: 50px !important;
+    padding-left: var(--horizontal-padding-tablet);
+    padding-right: var(--horizontal-padding-tablet);
   }
 
   .intro-section .profile-img {
@@ -103,6 +105,11 @@ $light-color-2: #ffffff;
     font-weight: 700;
     line-height: 80px;
   }
+ 
+
+  .intro-section .sub-heading {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -116,33 +123,28 @@ $light-color-2: #ffffff;
   .intro-section .profile-img {
     position: unset;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
   }
   .intro-section .profile-img img {
-    height: 222px !important;
+    height: 242px !important;
     max-width: 100% !important;
   }
   .intro-section .header-text {
     font-size: 40px !important;
     line-height: 50px;
+    padding-bottom:20px;
+  }
+
+  .intro-section .text-content {
+    text-align: center;
   }
   .intro-section .sub-heading {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .intro-section {
-    padding-left: var(--horizontal-padding-tablet);
-    padding-right: var(--horizontal-padding-tablet);
-  }
-
-  .intro-section .header-text {
-    font-size: 72px;
-  }
-  .intro-section .sub-heading {
-    font-size: 16px;
+    max-width: unset;
+    font-weight: 500px;
+    line-height: 26px;
+    padding-bottom:24px;
   }
 }
