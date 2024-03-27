@@ -11,7 +11,6 @@ $light-color-2: #ffffff;
   background-color: #242424;
   padding-left: var(--horizontal-padding-desktop);
   padding-right: var(--horizontal-padding-desktop);
-
 }
 
 .footer-wrapper {
@@ -22,7 +21,8 @@ $light-color-2: #ffffff;
   padding-bottom: 39px;
   max-width: var(--max-inner-width);
   margin-left: auto;
-margin-right: auto;;
+  margin-right: auto;
+  border-top: 1px solid white;
 }
 
 .footer-wrapper .name {
@@ -52,25 +52,27 @@ margin-right: auto;;
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
-  .footer {
+  .header {
     padding-left: var(--horizontal-padding-tablet);
     padding-right: var(--horizontal-padding-tablet);
   }
 
-  .footer-wrapper .name {
-    font-size: 24px;
-    line-height: 1.5;
+  .header-wrapper .name {
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
+    line-height: 32px;
+    letter-spacing: -0.44px;
   }
 
-  .footer-wrapper .social-icons {
+  .header-wrapper .social-icons {
     align-items: center;
     margin-top: 20px;
   }
 
-  .footer-wrapper .social-icons i {
-    height: 20px;
-    width: 20px;
+  .header-wrapper .social-icons i {
+    height: 25px;
+    width: 25px;
   }
 }
 

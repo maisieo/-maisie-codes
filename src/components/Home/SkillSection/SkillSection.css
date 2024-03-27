@@ -12,7 +12,7 @@
   padding-right: var(--horizontal-padding-desktop);
   max-width: var(--max-inner-width);
   margin-left: auto;
-margin-right: auto;;
+  margin-right: auto;
 }
 
 .skill-section .skill {
@@ -40,12 +40,12 @@ margin-right: auto;;
   .skill-section {
     padding-left: var(--horizontal-padding-tablet);
     padding-right: var(--horizontal-padding-tablet);
-  
+    align-content: center;
   }
 
   .skill-section .skill {
-    width:50%;
-    margin-bottom:52px;
+    width: 50%;
+    margin-bottom: 52px;
   }
 }
 
@@ -55,9 +55,7 @@ margin-right: auto;;
   .skill-section {
     padding-left: var(--horizontal-padding-mobile);
     padding-right: var(--horizontal-padding-mobile);
-
-      flex-direction: column;
-      text-align: center;
-
+    flex-direction: column;
+    text-align: center;
   }
 }
