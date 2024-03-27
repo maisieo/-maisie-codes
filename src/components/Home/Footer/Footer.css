@@ -9,6 +9,7 @@ $light-color-2: #ffffff;
 
 .footer {
   background-color: #242424;
+  padding:0 40px;
 }
 
 .footer-wrapper {
@@ -58,10 +59,17 @@ $light-color-2: #ffffff;
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
+  .footer {
+    padding:0 30px;
+  }
+  
   
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
+  .footer {
+    padding:0 20px;
+  }
   
 }

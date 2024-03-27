@@ -9,6 +9,7 @@
   margin-bottom: 100px;
   border-bottom: 1px solid white;
   text-align:center;
+  padding:0 40px;
 }
 
 .skill-section .skill {
@@ -52,10 +53,16 @@
 
 /*Tablet styles*/
 @media screen and (max-width:1024px) {
+  .skill-section {
+    padding: 0 30px;
+  }
   
 }
 
 /*Mobile styles*/
 
 @media screen and (max-width:768px) {
+  .skill-section {
+    padding: 0 20px;
+  }
 }

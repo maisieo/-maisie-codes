@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+.email-container {
+  padding:0 40px;
+}
+
 .gallery-container {
   position: relative;
   display: flex;
@@ -149,6 +153,10 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
+.email-container{
+  padding:0 20px;
+}
+
     .gallery-track {
       width: 100%;
       aspect-ratio: auto; 
@@ -164,4 +172,11 @@
      .button-next, .button-prev {
         display: none;
     }
+  }
+
+  @media screen and (max-width:1024px) {
+    .email-container {
+      padding:0 30px;
+    }
+    
   }

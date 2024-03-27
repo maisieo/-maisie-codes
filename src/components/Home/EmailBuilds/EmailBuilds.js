@@ -23,7 +23,7 @@ let EmailBuilds = () => {
   let jumpImage = (index) => setCurrent(index);
 
   return (
-    <div>
+    <div className="email-container">
     <Header />
       <div className='back-link'>
         <Link to='/'>Back</Link>

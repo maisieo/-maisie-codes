@@ -23,10 +23,9 @@ let LiveWebsites = () => {
     setCurrent(current === images.length - 1 ? 0 : current + 1);
   let prevImage = () =>
     setCurrent(current === 0 ? images.length - 1 : current - 1);
-  let jumpImage = (index) => setCurrent(index);
 
   return (
-    <div>
+    <div className='live-websites'>
       <Header />
       <div className="back-link">
         <Link to="/">Back</Link>

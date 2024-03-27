@@ -7,8 +7,7 @@ $light-color-2: #ffffff;
 */
 
 .intro-section {
-  /* max-width: 1141px; */
-  /* margin: 0 auto; */
+  padding: 0 40px;
   display: flex;
   flex-direction: row;
   padding-top: 88px;
@@ -79,19 +78,23 @@ $light-color-2: #ffffff;
   text-underline-offset: 10px;
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+/* Media Queries */
+
+/* @media (min-width: 601px) and (max-width: 1024px) {
   .intro-section .profile-img {
     left: 325px;
     top: 12px;
   }
-}
+} */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
   .intro-section {
     flex-direction: column-reverse;
     padding-top:unset;
-
+    padding:0 20px;
   }
+
   .intro-section .profile-img {
     position: unset;
     width: 100%;
@@ -114,6 +117,10 @@ $light-color-2: #ffffff;
 }
 
 @media (max-width: 1024px) {
+  .intro-section{
+    padding:0 30px;
+  }
+
   .intro-section .header-text {
     font-size: 72px;
   }

@@ -1,6 +1,7 @@
 .contact-section {
   color: #4ee1a0;
   background-color: #242424;
+  padding: 0 40px;
 }
 
 .contact-section .inner-wrapper {
@@ -85,11 +86,17 @@
 
 /* Tablet styles */
 @media screen and (max-width: 1024px) {
+  .contact-section {
+    padding: 0 30px;
+  }
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 0 20px;
+  }
   .contact-section .inner-wrapper {
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
 }
