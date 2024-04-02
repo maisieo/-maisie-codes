@@ -14,6 +14,16 @@ let projects = [
 
   {
     id: 2,
+    title: "SuperNet landing page",
+    skills: ["React", "CSS", "Node.js", "Javascript"],
+    imageUrl: "assets/imgs/Apps/SuperNet2.PNG",
+    githubUrl: "https://github.com/maisieo/superNet-landing-page",
+    liveUrl: "https://supernet-landing-page.netlify.app/",
+  },
+
+
+  {
+    id: 2,
     title: "Live client websites",
     skills: ["HTML", "CSS", "Javascript", "LWC"],
     imageUrl: "assets/imgs/Client work/Q-restaurant-page.JPG",
